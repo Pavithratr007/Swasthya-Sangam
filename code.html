@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#f1ede7","error":"#ba1a1a","on-primary-fixed":"#002116","error-container":"#ffdad6","on-surface-variant":"#414844","outline-variant":"#c1c8c3","on-tertiary-container":"#fffbff","surface-container-high":"#ebe8e2","primary-fixed":"#c4ebd9","on-secondary-fixed-variant":"#6f3800","outline":"#717974","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb0c9","primary-container":"#587c6d","surface-container-low":"#f7f3ed","on-error-container":"#93000a","on-error":"#ffffff","surface-container-highest":"#e6e2dc","primary-fixed-dim":"#a8cfbd","primary":"#3f6355","secondary-fixed":"#ffdcc4","on-tertiary":"#ffffff","on-background":"#1c1c18","surface-variant":"#e6e2dc","surface-container-lowest":"#ffffff","background":"#fdf9f3","on-primary-container":"#f5fff8","on-tertiary-fixed-variant":"#70334a","secondary":"#8e4e14","inverse-primary":"#a8cfbd","tertiary-fixed":"#ffd9e3","tertiary":"#89475f","secondary-container":"#ffab69","tertiary-container":"#a55f78","surface-bright":"#fdf9f3","on-tertiary-fixed":"#3a061e","on-surface":"#1c1c18","surface":"#fdf9f3","on-secondary-container":"#783d01","secondary-fixed-dim":"#ffb780","inverse-surface":"#31302d","surface-tint":"#426657","inverse-on-surface":"#f4f0ea","on-primary":"#ffffff","surface-dim":"#dddad4","on-secondary-fixed":"#2f1400","on-primary-fixed-variant":"#2a4d40"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xs":"0.25rem","margin":"2rem","space-xl":"2.5rem","gutter":"1.25rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Nunito Sans"],"body-lg":["Nunito Sans"],"label-sm":["Nunito Sans"],"title-md":["Nunito Sans"],"headline-sm":["Nunito Sans"],"label-md":["Nunito Sans"],"display-lg-mobile":["Nunito Sans"],"headline-md":["Nunito Sans"],"body-sm":["Nunito Sans"],"display-lg":["Nunito Sans"],"headline-lg":["Nunito Sans"],"label-lg":["Nunito Sans"],"body-md":["Nunito Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"34px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"42px","letterSpacing":"-0.005em","fontWeight":"700"}],"label-lg":["15px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,58,54,0.05)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[280px]"><img alt="Swasthya Sangam Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQbyOYyeZrY_JXFdYcVuoeaWZVcHZ7_wCgX3rZMZI2R7r6pSSprodjdd6_65pwnJ0JeOO2-Gsq_9GXJMIVZQ6kX33zivwKn7sFA5Ab7zPYUpepr__HUmx55tPqWl05rlQMWJDgwqLw-fPig8vz-iPh7sgxOS5ZJkHkyXCzFH6LOXhjjVmPixweXWlNIPsEAPRt35G15WjGWGy64tc2R81MVTo9_hHmiF4HU5IqaJrJ"/><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Swasthya Sangam</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal opacity-85">(ಸ್ವಾಸ್ಥ್ಯ ಸಂಗಮ)</span></div><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">Your Daily Path to Wellness</span></div></div><div class="hidden xl:flex items-center bg-surface-container rounded-full p-1 shadow-inner"><span class="font-label-sm text-label-sm text-on-surface-variant px-space-sm uppercase tracking-wider">Role:</span><div class="flex items-center gap-1"><button class="px-space-md py-1 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm" type="button">Instructor</button><button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button">Member</button><button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button">Admin</button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-lg p-1 text-on-surface-variant"><button class="px-2 py-0.5 rounded font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors" title="Decrease Font Size" type="button">A-</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest font-bold text-on-surface shadow-xs" title="Default Font Size" type="button">A</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors" title="Increase Font Size" type="button">A+</button></div><div class="flex items-center bg-surface-container-low rounded-full p-1 text-on-surface-variant"><button class="px-space-sm py-0.5 rounded-full font-label-md text-label-md bg-surface-container-lowest font-bold text-primary shadow-xs" type="button">EN</button><button class="px-space-sm py-0.5 rounded-full font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" type="button">ಕನ್ನಡ</button></div><button aria-label="Notifications" class="relative p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="relative group flex items-center pl-space-xs"><button class="flex items-center gap-space-sm focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsjizYQ-Z-Pggj_vGKPk6nq9TckxLnjkrUcyrqxAyaXZ8cJNURUF8BpfjkNzYcWIVlxBERjwWRXleeZGBZMqUJDY4hdgBHyTXLJfxMAFLYTRg2AY_IRXJJ6C9A3P3M8AFkdCbSwVzsBc1AEzM-uLniMjdXZNG1_XZCh4AwVSEe7sK5yNUQ9UqJyQ3KlfYWLzPxYNx7-mgfvDwHcXPEVyeoQM0TU1uH9PTShM4ffPxw"/><span class="material-symbols-outlined text-on-surface-variant text-label-lg group-hover:text-on-surface transition-transform duration-200 group-hover:rotate-180">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_-4px_rgba(48,58,54,0.12)] p-2 hidden group-hover:flex group-focus-within:flex flex-col z-50 animate-in fade-in slide-in-from-top-1 duration-150"><div class="px-space-md py-space-sm mb-1"><p class="font-label-lg text-label-lg text-on-surface leading-tight">Deepa Shastri</p><p class="font-label-sm text-label-sm text-on-surface-variant">Instructor • #KA-CIT-084</p></div><div class="h-px w-full bg-surface-container-high my-1"></div><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">badge</span>Profile</a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">tune</span>Settings</a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">lock_reset</span>Change Password</a><div class="h-px w-full bg-surface-container-high my-1"></div><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-title-md">logout</span>Logout</a></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(48,58,54,0.03)] overflow-y-auto"><div class="flex flex-col gap-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold opacity-75">Sangam Registers</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-xs"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary-container font-semibold shadow-xs" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-title-md">space_dashboard</span><span>Dashboard Overview</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="yoga-sessions-timetable" href="#"><span class="material-symbols-outlined text-title-md">self_improvement</span><span>Yoga Sessions &amp; Timetable</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="attendance-management" href="#"><span class="material-symbols-outlined text-title-md">qr_code_scanner</span><span>Attendance (QR &amp; Manual)</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="member-directory" href="#"><span class="material-symbols-outlined text-title-md">group</span><span>Member Directory &amp; Approvals</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="suggestions-queries" href="#"><span class="material-symbols-outlined text-title-md">contact_support</span><span>Suggestions &amp; Queries</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="announcements" href="#"><span class="material-symbols-outlined text-title-md">campaign</span><span>Announcements</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-title-md">analytics</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">settings</span><span>Settings</span></a></nav></div><div class="mt-space-lg p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-body-md">energy_savings_leaf</span><span class="font-label-md text-label-md font-bold">Daily Shloka &amp; Dhyana</span></div><p class="font-label-sm text-label-sm text-on-surface-variant italic mt-1">"ಸಮತ್ವಂ ಯೋಗ ಉಚ್ಯತೆ"</p><p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">(Equanimity is known as Yoga)</p></div></aside><div class="pl-72 flex flex-col min-h-screen"><main class="relative pt-20 w-full px-margin py-space-lg flex-1 bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Welcome & Context Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low p-space-lg shadow-sm mb-space-lg">
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-md">volunteer_activism</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Instructor Sangam Desk</h1>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2.5 py-0.5 rounded-full font-semibold uppercase tracking-wider">KA-CIT-GUBBI</span>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed-variant px-2.5 py-0.5 rounded-full font-semibold">ಸ್ವಯಂಸೇವಕ ತರಬೇತುದಾರ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Holistic Group Wellness Register &amp; Community Timetable • <span class="font-semibold text-primary">CIT, Gubbi Circle</span>
+</p>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all" onclick="openSessionModal()" type="button">
+<span class="material-symbols-outlined text-title-md">add_circle</span>
+<span>+ Schedule Session</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" onclick="openMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">person_add</span>
+<span>+ Register Member</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Section Nav Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 mb-space-lg scrollbar-none">
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-overview" onclick="switchDashboardTab('overview')" type="button">
+<span class="material-symbols-outlined text-label-lg">grid_view</span>
+<span>Overview (ಅವಲೋಕನ)</span>
+</button>
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-attendance" onclick="switchDashboardTab('attendance')" type="button">
+<span class="material-symbols-outlined text-label-lg">qr_code_scanner</span>
+<span>Mark Attendance (ಹಾಜರಾತಿ)</span>
+</button>
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-members" onclick="switchDashboardTab('members')" type="button">
+<span class="material-symbols-outlined text-label-lg">group</span>
+<span>Members Directory (ಸದಸ್ಯರು)</span>
+</button>
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-sessions" onclick="switchDashboardTab('sessions')" type="button">
+<span class="material-symbols-outlined text-label-lg">calendar_month</span>
+<span>Yoga Sessions (ಯೋಗ ಸತ್ರಗಳು)</span>
+</button>
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-suggestions" onclick="switchDashboardTab('suggestions')" type="button">
+<span class="material-symbols-outlined text-label-lg">forum</span>
+<span>Suggestions &amp; Queries (ಸಲಹೆಗಳು)</span>
+</button>
+<button class="dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap" id="tab-btn-reports" onclick="switchDashboardTab('reports')" type="button">
+<span class="material-symbols-outlined text-label-lg">insights</span>
+<span>Reports &amp; Analytics (ವರದಿಗಳು)</span>
+</button>
+</div>
+<!-- ==================== TAB 1: OVERVIEW ==================== -->
+<div class="tab-panel flex flex-col gap-space-lg" id="tab-panel-overview">
+<!-- 6 Live Metrics Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Registered</span>
+<span class="material-symbols-outlined text-title-md text-primary">groups</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-total-members">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಒಟ್ಟು ಸದಸ್ಯರು</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Active Members</span>
+<span class="material-symbols-outlined text-title-md text-primary">check_circle</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-active-members">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಸಕ್ರಿಯ ಸದಸ್ಯರು</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Today's Attendance</span>
+<span class="material-symbols-outlined text-title-md text-secondary">fact_check</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-today-attendance">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಇಂದಿನ ಹಾಜರಾತಿ</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Total Sessions</span>
+<span class="material-symbols-outlined text-title-md text-primary">self_improvement</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-total-sessions">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಒಟ್ಟು ಸತ್ರಗಳು</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Pending Approvals</span>
+<span class="material-symbols-outlined text-title-md text-tertiary">hourglass_top</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-pending-approvals">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಬಾಕಿ ಅನುಮೋದನೆ</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Queries / Ideas</span>
+<span class="material-symbols-outlined text-title-md text-on-surface-variant">chat_bubble</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface leading-none" id="metric-pending-suggestions">0</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಸಲಹೆಗಳು</span>
+</div>
+</div>
+</div>
+<!-- Empty State Hero Canvas -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm text-center flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Calm Lotus Motif Graphic (Subtle SVG) -->
+<div class="w-32 h-32 mb-space-md rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<svg aria-hidden="true" class="w-20 h-20 fill-current opacity-80" viewbox="0 0 100 100">
+<path d="M50 15 C45 35 30 50 15 55 C30 60 45 75 50 95 C55 75 70 60 85 55 C70 50 55 35 50 15 Z"></path>
+<path d="M50 30 C48 45 38 55 25 58 C38 62 48 72 50 85 C52 72 62 62 75 58 C62 55 52 45 50 30 Z" opacity="0.5"></path>
+<circle cx="50" cy="55" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold max-w-xl">
+        No sessions or attendance records yet
+      </h2>
+<p class="font-title-md text-title-md text-primary font-semibold mt-1">
+        ಇನ್ನೂ ಯಾವುದೇ ಸತ್ರಗಳು ಅಥವಾ ಹಾಜರಾತಿ ದಾಖಲಾಗಿಲ್ಲ
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-space-sm">
+        Schedule your first yoga session or generate a QR code to start recording attendance for your neighborhood self-help circle.
+      </p>
+<div class="flex items-center gap-space-md mt-space-lg flex-wrap justify-center">
+<button class="px-space-lg py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-all flex items-center gap-2" onclick="openSessionModal()" type="button">
+<span class="material-symbols-outlined text-title-md">schedule</span>
+<span>+ Schedule First Session</span>
+</button>
+<button class="px-space-lg py-3 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-2" onclick="switchDashboardTab('attendance')" type="button">
+<span class="material-symbols-outlined text-title-md">qr_code</span>
+<span>Open Session QR Code</span>
+</button>
+<button class="px-space-lg py-3 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-all flex items-center gap-2" onclick="openMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">person_add</span>
+<span>+ Register Member</span>
+</button>
+</div>
+<!-- Educational Guidance Box -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md w-full max-w-3xl mt-space-xl text-left">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg mb-1">
+<span class="material-symbols-outlined text-title-md">looks_one</span>
+<span>1. Set Timetable</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Create morning Dhyana or evening Pranayama schedules with clear venue &amp; focus instructions.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg mb-1">
+<span class="material-symbols-outlined text-title-md">looks_two</span>
+<span>2. Onboard Neighbors</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enroll community participants with language preferences and health notes securely maintained.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-label-lg text-label-lg mb-1">
+<span class="material-symbols-outlined text-title-md">looks_3</span>
+<span>3. Zero-Friction QR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Display live dynamic QR code on instructor smartphone or projector for one-second member check-in.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== TAB 2: MARK ATTENDANCE ==================== -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-panel-attendance">
+<!-- Sub-Segment Controls -->
+<div class="flex items-center justify-between flex-wrap gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-2 bg-surface-container-low p-1 rounded-xl">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-xs transition-all flex items-center gap-1.5" id="btn-mode-qr" onclick="toggleAttendanceMode('qr')" type="button">
+<span class="material-symbols-outlined text-title-md">qr_code_2</span>
+<span>Generate Session QR Code</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all flex items-center gap-1.5" id="btn-mode-manual" onclick="toggleAttendanceMode('manual')" type="button">
+<span class="material-symbols-outlined text-title-md">checklist</span>
+<span>Manual Attendance Marker</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all flex items-center gap-1.5" id="btn-mode-scanner" onclick="toggleAttendanceMode('scanner')" type="button">
+<span class="material-symbols-outlined text-title-md">barcode_scanner</span>
+<span>Scan Member QR</span>
+</button>
+</div>
+<!-- Quick Session Indicator -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Session Slot:</span>
+<select class="bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-1.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" id="attendance-session-select" onchange="handleSessionChange(this.value)">
+<option value="none">-- No Scheduled Session Selected --</option>
+<option value="morning">Morning Daily Shloka &amp; Surya Namaskar (06:30 AM)</option>
+<option value="evening">Evening Pranayama &amp; Meditation (05:30 PM)</option>
+</select>
+</div>
+</div>
+<!-- Mode A: Session QR Code Display -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="attendance-qr-view">
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Dynamic Check-in Gateway</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Session Check-In QR</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Project or hold this QR screen at the community hall entrance.</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              Expires in 14:58
+            </span>
+</div>
+<!-- QR Visual Representation (SVG pure geometric token) -->
+<div class="flex flex-col items-center justify-center my-space-lg p-space-lg rounded-2xl bg-surface-container-low text-center">
+<div class="p-4 bg-white rounded-xl shadow-md flex items-center justify-center">
+<svg class="w-64 h-64 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- Outer Corners -->
+<rect fill="none" height="26" rx="2" stroke="currentColor" stroke-width="4" width="26" x="5" y="5"></rect>
+<rect height="14" rx="1" width="14" x="11" y="11"></rect>
+<rect fill="none" height="26" rx="2" stroke="currentColor" stroke-width="4" width="26" x="69" y="5"></rect>
+<rect height="14" rx="1" width="14" x="75" y="11"></rect>
+<rect fill="none" height="26" rx="2" stroke="currentColor" stroke-width="4" width="26" x="5" y="69"></rect>
+<rect height="14" rx="1" width="14" x="11" y="75"></rect>
+<!-- Matrix details -->
+<rect height="6" width="6" x="36" y="8"></rect>
+<rect height="6" width="16" x="46" y="8"></rect>
+<rect height="6" width="10" x="36" y="18"></rect>
+<rect height="6" width="8" x="52" y="18"></rect>
+<rect height="6" width="10" x="8" y="36"></rect>
+<rect height="12" width="6" x="8" y="48"></rect>
+<rect height="8" width="8" x="20" y="40"></rect>
+<rect fill="none" height="28" stroke="currentColor" stroke-width="3" width="28" x="36" y="36"></rect>
+<circle cx="50" cy="50" fill="#3f6355" r="6"></circle>
+<rect height="12" width="6" x="68" y="36"></rect>
+<rect height="6" width="12" x="80" y="40"></rect>
+<rect height="8" width="8" x="70" y="54"></rect>
+<rect height="8" width="8" x="84" y="54"></rect>
+<rect height="14" width="8" x="36" y="70"></rect>
+<rect height="6" width="14" x="48" y="70"></rect>
+<rect height="10" width="8" x="48" y="82"></rect>
+<rect height="8" width="14" x="68" y="70"></rect>
+<rect height="20" width="6" x="86" y="70"></rect>
+<rect height="8" width="12" x="68" y="84"></rect>
+</svg>
+</div>
+<div class="mt-space-md">
+<span class="font-label-md text-label-md text-on-surface font-bold tracking-widest uppercase">ID: SANGAM-GUBBI-YOGA-2025</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಸದಸ್ಯರು ಈ ಕ್ಯೂಆರ್ ಕೋಡ್ ಅನ್ನು ತಮ್ಮ ಫೋನ್ ಕ್ಯಾಮೆರಾದಿಂದ ಸ್ಕ್ಯಾನ್ ಮಾಡಬಹುದು</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-md pt-space-sm">
+<div class="flex items-center gap-2">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="refreshQR()" type="button">
+<span class="material-symbols-outlined text-title-md">sync</span>
+<span>Regenerate Token</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-title-md">print</span>
+<span>Print Hall Poster</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">security</span> AES-256 Geo-Fenced
+          </span>
+</div>
+</div>
+<!-- Realtime Session Register Log -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Live Scan Feed</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ರೀಲ್-ಟೈಮ್ ಹಾಜರಾತಿ ನಮೂದು</p>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Count</span>
+<p class="font-headline-sm text-headline-sm font-bold text-primary"><span id="live-checkin-count">0</span> Present</p>
+</div>
+</div>
+<!-- Empty State for Live Scans -->
+<div class="py-space-xl text-center rounded-xl bg-surface-container-low flex flex-col items-center justify-center" id="live-feed-empty">
+<span class="material-symbols-outlined text-headline-lg text-on-surface-variant opacity-40 mb-2">fingerprint</span>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Waiting for members to check in</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+              Check-ins through member scans or volunteer scanner will show up instantly here.
+            </p>
+</div>
+<div class="hidden flex flex-col gap-2 max-h-72 overflow-y-auto" id="live-feed-list">
+<!-- Dynamically populated if entries made -->
+</div>
+</div>
+<div class="mt-space-md p-space-md bg-surface-container rounded-xl flex items-center justify-between text-on-surface">
+<div>
+<p class="font-label-md text-label-md font-bold">Prefer Physical Checklist?</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Switch to the manual marker anytime.</p>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md" onclick="toggleAttendanceMode('manual')" type="button">
+            Manual Register
+          </button>
+</div>
+</div>
+</div>
+<!-- Mode B: Manual Attendance Marker -->
+<div class="hidden flex-col gap-space-md" id="attendance-manual-view">
+<!-- Attendance Action & Status Toolbar -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-md w-full md:w-auto">
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-md">search</span>
+<input class="w-full pl-9 pr-4 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary" id="manual-member-search" placeholder="Search by name, roll #, phone..." type="text"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap hidden sm:inline">Sort: Alphabetical</span>
+</div>
+<div class="flex items-center gap-space-md w-full md:w-auto justify-between md:justify-end">
+<div class="flex items-center gap-space-sm font-label-md text-label-md">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed">Present: <strong id="manual-present-count">0</strong></span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant">Absent: <strong id="manual-absent-count">0</strong></span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface flex items-center gap-1" onclick="undoLastAttendance()" type="button">
+<span class="material-symbols-outlined text-body-sm">undo</span>
+<span>Undo Marking</span>
+</button>
+</div>
+</div>
+<!-- Manual Member Table Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden p-space-lg">
+<!-- Empty State in Member Attendance -->
+<div class="py-space-xl flex flex-col items-center justify-center text-center" id="manual-empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-headline-md">person_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">No members registered yet</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">
+            Share the sangam enrollment link with your community or manually add participants to start marking attendance.
+          </p>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="openMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">person_add</span>
+<span>+ Register First Member</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="copyInviteLink()" type="button">
+<span class="material-symbols-outlined text-title-md">share</span>
+<span id="copy-btn-text">Copy Self-Registration URL</span>
+</button>
+</div>
+</div>
+<!-- Populated Member Rows Container (Controlled by JS) -->
+<div class="hidden flex-col gap-2" id="manual-member-list-table">
+<!-- Dynamically inserted if instructor adds members -->
+</div>
+</div>
+</div>
+<!-- Mode C: Interactive QR Scanner Simulation -->
+<div class="hidden flex-col gap-space-md" id="attendance-scanner-view">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Scan Member Digital Health Card</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Point the device camera at the participant's Swasthya Sangam digital ID.</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Camera Active</span>
+</div>
+<!-- Camera Viewfinder Mock / Interactive Scan Trigger -->
+<div class="relative w-full max-w-lg mx-auto aspect-video rounded-2xl bg-surface-container-highest flex flex-col items-center justify-center overflow-hidden p-space-lg">
+<div class="absolute inset-8 rounded-xl border-2 border-primary/40 flex flex-col justify-between p-2 pointer-events-none">
+<div class="flex justify-between">
+<div class="w-4 h-4 border-t-2 border-l-2 border-primary"></div>
+<div class="w-4 h-4 border-t-2 border-r-2 border-primary"></div>
+</div>
+<div class="w-full h-0.5 bg-primary/70 animate-pulse"></div>
+<div class="flex justify-between">
+<div class="w-4 h-4 border-b-2 border-l-2 border-primary"></div>
+<div class="w-4 h-4 border-b-2 border-r-2 border-primary"></div>
+</div>
+</div>
+<span class="material-symbols-outlined text-headline-lg text-primary mb-2">qr_code_scanner</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold z-10 text-center">Place Member ID barcode or QR within frame</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant z-10 text-center">ಕ್ಯೂಆರ್ ಕೋಡ್ ಅನ್ನು ಇಲ್ಲಿ ತೋರಿಸಿ</p>
+<div class="mt-4 z-10 flex gap-2">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm shadow-sm hover:opacity-90" onclick="simulateScanToken()" type="button">
+              Simulate Member Scan
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== TAB 3: MEMBERS ==================== -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-panel-members">
+<!-- Controls Header -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="member-filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-xs" id="filter-all" onclick="filterMembers('all')" type="button">All (0)</button>
+<button class="member-filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface" id="filter-active" onclick="filterMembers('active')" type="button">Active (0)</button>
+<button class="member-filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface" id="filter-inactive" onclick="filterMembers('inactive')" type="button">Inactive (0)</button>
+<button class="member-filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface" id="filter-pending" onclick="filterMembers('pending')" type="button">Pending Approval (0)</button>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<div class="relative w-full md:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-md">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search by name, phone..." type="text"/>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm whitespace-nowrap flex items-center gap-1.5" onclick="openMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">person_add</span>
+<span>+ Register New Member</span>
+</button>
+</div>
+</div>
+<!-- Pending Approval Queue Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-headline-sm">pending_actions</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">New Community Registrations Awaiting Verification</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಹೊಸ ನೋಂದಣಿ ಪರಿಶೀಲನೆ ಬಾಕಿ ಇದೆ</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">0 Requests</span>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low text-center">
+<p class="font-label-md text-label-md text-on-surface font-semibold">No self-help group members currently awaiting verification.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">When villagers apply via Sangam community QR, their health questionnaires appear here for instructor sign-off.</p>
+</div>
+</div>
+<!-- Member Roster Main Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between min-h-[360px]">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Group Member Roster (ಸದಸ್ಯರ ಪಟ್ಟಿ)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total: 0 participants</span>
+</div>
+<!-- Clean Empty State Illustration -->
+<div class="py-space-xl flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-headline-md">diversity_1</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">No members registered yet</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">
+            Click "+ Register New Member" to onboard your yoga group participants or share your Sangam enrollment link.
+          </p>
+<button class="mt-space-md px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-sm" onclick="openMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">add_circle</span>
+<span>+ Add First Member</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== TAB 4: YOGA SESSIONS ==================== -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-panel-sessions">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Yoga Timetable &amp; Curricula</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಯೋಗ ವೇಳಾಪಟ್ಟಿ ಮತ್ತು ಆಸನ ತರಗತಿಗಳು</p>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="openSessionModal()" type="button">
+<span class="material-symbols-outlined text-title-md">add</span>
+<span>+ Create New Yoga Session</span>
+</button>
+</div>
+<!-- Sub-tabs: Upcoming vs Past -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Upcoming Sessions Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between min-h-[340px]">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-title-md">upcoming</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Upcoming Sessions (ಮುಂದಿನ ಸತ್ರಗಳು)</h4>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full font-semibold">0 Scheduled</span>
+</div>
+<div class="py-space-xl flex flex-col items-center justify-center text-center bg-surface-container-low rounded-xl p-space-md">
+<span class="material-symbols-outlined text-headline-lg text-primary opacity-60 mb-2">event_available</span>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">No yoga sessions scheduled yet</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+              Click "+ Create Session" to organize your group timetable and activate QR codes for attendance.
+            </p>
+<button class="mt-space-md px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm" onclick="openSessionModal()" type="button">
+              Schedule Morning Class
+            </button>
+</div>
+</div>
+</div>
+<!-- Past Sessions Register Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between min-h-[340px]">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-title-md">history</span>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Past Completed Sessions (ಹಿಂದಿನ ಸತ್ರಗಳು)</h4>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full font-semibold">0 Recorded</span>
+</div>
+<div class="py-space-xl flex flex-col items-center justify-center text-center bg-surface-container-low rounded-xl p-space-md">
+<span class="material-symbols-outlined text-headline-lg text-on-surface-variant opacity-40 mb-2">task</span>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">No past sessions recorded</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+              Historical summaries, asana logs, and completion statistics will archive here automatically.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== TAB 5: SUGGESTIONS & QUERIES ==================== -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-panel-suggestions">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Community Feedback &amp; Queries</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಸದಸ್ಯರ ಸಲಹೆಗಳು, ವಿಚಾರಣೆಗಳು ಮತ್ತು ಆರೋಗ್ಯ ಪ್ರಶ್ನೆಗಳು</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold" type="button">All (0)</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">Pending (0)</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">Resolved (0)</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm text-center flex flex-col items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-headline-md">mark_chat_read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">No suggestions received yet</h4>
+<p class="font-title-md text-title-md text-primary font-semibold mt-0.5">ಇನ್ನೂ ಯಾವುದೇ ಸಲಹೆಗಳು ಬಂದಿಲ್ಲ</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-1">
+        Participants can submit private wellness questions, schedule preferences, or anonymous health feedback from their Member Portal.
+      </p>
+</div>
+</div>
+<!-- ==================== TAB 6: REPORTS & ANALYTICS ==================== -->
+<div class="tab-panel hidden flex-col gap-space-lg" id="tab-panel-reports">
+<!-- Action Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Registers &amp; Societal Outreach Reports</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಮಾಸಿಕ ಹಾಜರಾತಿ, ಗೈರುಹಾಜರಿ ವಿಶ್ಲೇಷಣೆ ಮತ್ತು ರಫ್ತುಗಳು</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="exportDataNotice('CSV')" type="button">
+<span class="material-symbols-outlined text-body-md">table_view</span>
+<span>Download CSV</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center gap-1.5" onclick="exportDataNotice('PDF')" type="button">
+<span class="material-symbols-outlined text-body-md">picture_as_pdf</span>
+<span>Download PDF</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-body-md">print</span>
+<span>Print Report</span>
+</button>
+</div>
+</div>
+<!-- Chart Placeholder and Breakdown Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Monthly Attendance Consistency Trend</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">30-day tracking of group presence</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded-md">March 2025</span>
+</div>
+<!-- Clean SVG Chart Empty State Grid -->
+<div class="relative w-full h-64 rounded-xl bg-surface-container-low p-space-md flex flex-col items-center justify-center text-center overflow-hidden">
+<svg class="absolute inset-0 w-full h-full stroke-on-surface-variant/10" xmlns="http://www.w3.org/2000/svg">
+<line stroke-dasharray="4" x1="10%" x2="90%" y1="20%" y2="20%"></line>
+<line stroke-dasharray="4" x1="10%" x2="90%" y1="40%" y2="40%"></line>
+<line stroke-dasharray="4" x1="10%" x2="90%" y1="60%" y2="60%"></line>
+<line stroke-dasharray="4" x1="10%" x2="90%" y1="80%" y2="80%"></line>
+</svg>
+<div class="relative z-10 flex flex-col items-center">
+<span class="material-symbols-outlined text-headline-lg text-primary opacity-50 mb-1">show_chart</span>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Attendance trends will appear here once sessions are recorded.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ಸತ್ರಗಳನ್ನು ದಾಖಲಿಸಿದ ನಂತರ ಹಾಜರಾತಿ ಚಾರ್ಟ್ ಇಲ್ಲಿ ಗೋಚರಿಸುತ್ತದೆ.</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-md text-center">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Average Turnout</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">-- %</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Consecutive Days</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">0 Days</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Repeat Rate</span>
+<p class="font-title-md text-title-md font-bold text-on-surface">-- %</p>
+</div>
+</div>
+</div>
+<!-- Absenteeism Follow-up Queue -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Absentee Care Follow-up</h4>
+<span class="material-symbols-outlined text-secondary text-title-md">hearing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Members absent for 3+ consecutive sessions receive friendly volunteer check-ins.
+          </p>
+<div class="p-space-md rounded-xl bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-title-md text-primary mb-1">sentiment_satisfied</span>
+<p class="font-label-md text-label-md text-on-surface font-bold">No follow-ups required</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">All registered participants are in good standing.</p>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm">
+<button class="w-full py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all flex items-center justify-center gap-2" onclick="exportDataNotice('Summary')" type="button">
+<span class="material-symbols-outlined text-title-md">summarize</span>
+<span>Generate CIT Project Summary</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== MODAL: REGISTER NEW MEMBER ==================== -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="modal-member">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl max-w-lg w-full max-h-[921px] overflow-y-auto p-space-lg animate-in fade-in duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Swasthya Sangam Register</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">+ Register New Group Member</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಹೊಸ ಯೋಗ ಸದಸ್ಯರ ನೋಂದಣಿ</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeMemberModal()" type="button">
+<span class="material-symbols-outlined text-title-md">close</span>
+</button>
+</div>
+<form class="mt-space-md flex flex-col gap-space-md" id="member-registration-form" onsubmit="handleMemberSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+            Full Name (ಸಂಪೂರ್ಣ ಹೆಸರು) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-name" placeholder="Enter participant full name" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Phone Number (ಮೊಬೈಲ್ ಸಂಖ್ಯೆ) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-phone" pattern="[0-9]{10}" placeholder="10-digit number" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Age (ವಯಸ್ಸು) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-age" max="100" min="8" placeholder="e.g. 42" required="" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Gender (ಲಿಂಗ) <span class="font-normal text-on-surface-variant text-label-sm">(Optional)</span>
+</label>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-gender">
+<option value="Prefer not to say">Prefer not to say</option>
+<option value="Female">Female (ಮಹಿಳೆ)</option>
+<option value="Male">Male (ಪುರುಷ)</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Preferred Language (ಭಾಷೆ)
+            </label>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-lang">
+<option value="Kannada">ಕನ್ನಡ (Kannada)</option>
+<option value="English">English</option>
+<option value="Bilingual">Bilingual</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+            Private Health Notes / Asana Restrictions (ಆರೋಗ್ಯ ಟಿಪ್ಪಣಿಗಳು)
+          </label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-mem-health" placeholder="e.g. Back pain, hypertension, beginner status (Kept strictly private to instructors)" rows="2"></textarea>
+</div>
+<div class="flex items-start gap-2 pt-1">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary" id="form-mem-consent" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="form-mem-consent">
+            Participant has consented to voluntary community yoga practice &amp; attendance register logging under CIT Gubbi initiative.
+          </label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="closeMemberModal()" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95" type="submit">
+            Save Member Record
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- ==================== MODAL: CREATE NEW YOGA SESSION ==================== -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="modal-session">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl max-w-lg w-full max-h-[921px] overflow-y-auto p-space-lg animate-in fade-in duration-200">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Timetable Scheduler</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">+ Schedule New Yoga Session</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಹೊಸ ಯೋಗ ಸತ್ರವನ್ನು ನಿಗದಿಪಡಿಸಿ</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeSessionModal()" type="button">
+<span class="material-symbols-outlined text-title-md">close</span>
+</button>
+</div>
+<form class="mt-space-md flex flex-col gap-space-md" id="session-creation-form" onsubmit="handleSessionSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+            Session Title &amp; Focus Topic (ವಿಷಯ / ಆಸನ) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-title" placeholder="e.g. Surya Namaskar, Pranayama &amp; Joint Mobility" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Date (ದಿನಾಂಕ) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-date" required="" type="date"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              Start Time <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-start" required="" type="time" value="06:30"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+              End Time <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-end" required="" type="time" value="07:30"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+            Venue / Location (ಸ್ಥಳ) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-venue" placeholder="e.g. Gubbi Community Ground / CIT Yoga Bhavan" required="" type="text" value="CIT Campus Hall / Gubbi Community Center"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">
+            Instructor Guidelines &amp; Props (ಸೂಚನೆಗಳು)
+          </label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-2 focus:ring-primary font-body-sm text-body-sm" id="form-sess-notes" placeholder="e.g. Please bring yoga mat, cotton dupatta, and water bottle. Open to all fitness levels." rows="2"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" onclick="closeSessionModal()" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95" type="submit">
+            Publish to Timetable
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none" id="dashboard-toast">
+<div class="px-space-md py-3 rounded-xl bg-on-surface text-surface shadow-lg flex items-center gap-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary-fixed" id="toast-icon">check_circle</span>
+<span id="toast-message">Notification message</span>
+</div>
+</div>
+</div>
+<script>
+  // State management without any fake names or fictional records
+  let appState = {
+    totalMembers: 0,
+    activeMembers: 0,
+    todayAttendance: 0,
+    totalSessions: 0,
+    pendingApprovals: 0,
+    pendingSuggestions: 0,
+    members: [],
+    sessions: [],
+    recentScans: []
+  };
+
+  // Switch Main Dashboard Tabs
+  function switchDashboardTab(tabId) {
+    const tabs = ['overview', 'attendance', 'members', 'sessions', 'suggestions', 'reports'];
+    tabs.forEach(id => {
+      const panel = document.getElementById('tab-panel-' + id);
+      const btn = document.getElementById('tab-btn-' + id);
+      if (panel) {
+        if (id === tabId) {
+          panel.classList.remove('hidden');
+          panel.classList.add('flex');
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('flex');
+        }
+      }
+      if (btn) {
+        if (id === tabId) {
+          btn.className = "dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-xs flex items-center gap-1.5 whitespace-nowrap";
+        } else {
+          btn.className = "dashboard-tab-btn px-space-md py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-xs flex items-center gap-1.5 whitespace-nowrap";
+        }
+      }
+    });
+  }
+
+  // Toggle Attendance Sub-Modes
+  function toggleAttendanceMode(mode) {
+    const qrView = document.getElementById('attendance-qr-view');
+    const manualView = document.getElementById('attendance-manual-view');
+    const scannerView = document.getElementById('attendance-scanner-view');
+    
+    const btnQr = document.getElementById('btn-mode-qr');
+    const btnManual = document.getElementById('btn-mode-manual');
+    const btnScanner = document.getElementById('btn-mode-scanner');
+
+    [qrView, manualView, scannerView].forEach(v => v.classList.add('hidden'));
+    [btnQr, btnManual, btnScanner].forEach(b => {
+      b.className = "px-space-md py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all flex items-center gap-1.5";
+    });
+
+    if (mode === 'qr') {
+      qrView.classList.remove('hidden');
+      btnQr.className = "px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-xs transition-all flex items-center gap-1.5";
+    } else if (mode === 'manual') {
+      manualView.classList.remove('hidden');
+      btnManual.className = "px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-xs transition-all flex items-center gap-1.5";
+    } else if (mode === 'scanner') {
+      scannerView.classList.remove('hidden');
+      btnScanner.className = "px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-xs transition-all flex items-center gap-1.5";
+    }
+  }
+
+  // Member Registration Modal Handlers
+  function openMemberModal() {
+    const modal = document.getElementById('modal-member');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeMemberModal() {
+    const modal = document.getElementById('modal-member');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.getElementById('member-registration-form').reset();
+  }
+
+  function handleMemberSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('form-mem-name').value.trim();
+    const phone = document.getElementById('form-mem-phone').value.trim();
+    const age = document.getElementById('form-mem-age').value.trim();
+    const gender = document.getElementById('form-mem-gender').value;
+    const lang = document.getElementById('form-mem-lang').value;
+    const health = document.getElementById('form-mem-health').value.trim();
+
+    if (!name || !phone) return;
+
+    const newMember = {
+      id: 'MEM-' + (appState.members.length + 1).toString().padStart(3, '0'),
+      name: name,
+      phone: phone,
+      age: age,
+      gender: gender,
+      lang: lang,
+      health: health || 'None reported',
+      status: 'Active',
+      present: false
+    };
+
+    appState.members.push(newMember);
+    appState.totalMembers = appState.members.length;
+    appState.activeMembers = appState.members.length;
+    updateMetricsUI();
+    renderMembersTable();
+    closeMemberModal();
+    showToast(`Participant ${name} added successfully!`, 'check_circle');
+  }
+
+  // Session Modal Handlers
+  function openSessionModal() {
+    const modal = document.getElementById('modal-session');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    // Pre-fill today's date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('form-sess-date').value = today;
+  }
+
+  function closeSessionModal() {
+    const modal = document.getElementById('modal-session');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.getElementById('session-creation-form').reset();
+  }
+
+  function handleSessionSubmit(e) {
+    e.preventDefault();
+    const title = document.getElementById('form-sess-title').value.trim();
+    const date = document.getElementById('form-sess-date').value;
+    const start = document.getElementById('form-sess-start').value;
+    const venue = document.getElementById('form-sess-venue').value.trim();
+
+    if (!title || !date) return;
+
+    const sessionObj = {
+      id: 'SESS-' + (appState.sessions.length + 1),
+      title: title,
+      date: date,
+      start: start,
+      venue: venue
+    };
+
+    appState.sessions.push(sessionObj);
+    appState.totalSessions = appState.sessions.length;
+    updateMetricsUI();
+
+    // Update Session Selector in attendance tab
+    const selector = document.getElementById('attendance-session-select');
+    const opt = document.createElement('option');
+    opt.value = sessionObj.id;
+    opt.textContent = `${sessionObj.title} (${sessionObj.date} ${sessionObj.start})`;
+    selector.appendChild(opt);
+    selector.value = sessionObj.id;
+
+    closeSessionModal();
+    showToast(`Session "${title}" scheduled!`, 'event');
+  }
+
+  // Renders the Manual Attendance Table after genuine additions
+  function renderMembersTable() {
+    const emptyState = document.getElementById('manual-empty-state');
+    const tableContainer = document.getElementById('manual-member-list-table');
+    
+    if (appState.members.length === 0) {
+      emptyState.classList.remove('hidden');
+      tableContainer.classList.add('hidden');
+      return;
+    }
+
+    emptyState.classList.add('hidden');
+    tableContainer.classList.remove('hidden');
+    tableContainer.innerHTML = '';
+
+    appState.members.forEach((m, idx) => {
+      const row = document.createElement('div');
+      row.className = "p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-4 transition-all";
+      row.innerHTML = `
+        <div class="flex items-center gap-space-md min-w-0">
+          <div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-bold font-label-md">
+            ${m.name.charAt(0).toUpperCase()}
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg font-bold text-on-surface truncate">${m.name}</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">${m.id}</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant truncate">${m.phone} • ${m.age} yrs • Lang: ${m.lang}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="toggleMemberAttendance(${idx})" class="px-space-md py-1.5 rounded-lg ${m.present ? 'bg-primary text-on-primary' : 'bg-surface-container text-on-surface'} font-label-md text-label-md transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-body-md">${m.present ? 'check_circle' : 'radio_button_unchecked'}</span>
+            <span>${m.present ? 'Marked Present' : 'Mark Present'}</span>
+          </button>
+        </div>
+      `;
+      tableContainer.appendChild(row);
+    });
+
+    updateAttendanceCounters();
+  }
+
+  function toggleMemberAttendance(idx) {
+    if (!appState.members[idx]) return;
+    appState.members[idx].present = !appState.members[idx].present;
+    
+    if (appState.members[idx].present) {
+      appState.recentScans.push({
+        name: appState.members[idx].name,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      });
+      showToast(`${appState.members[idx].name} marked present!`, 'check');
+    }
+    
+    renderMembersTable();
+    updateLiveFeed();
+  }
+
+  function undoLastAttendance() {
+    const presentMembers = appState.members.filter(m => m.present);
+    if (presentMembers.length === 0) {
+      showToast('No markings to undo.', 'info');
+      return;
+    }
+    const last = presentMembers[presentMembers.length - 1];
+    last.present = false;
+    showToast(`Undid marking for ${last.name}`, 'undo');
+    renderMembersTable();
+    updateLiveFeed();
+  }
+
+  function updateAttendanceCounters() {
+    const presentCount = appState.members.filter(m => m.present).length;
+    const absentCount = appState.members.length - presentCount;
+
+    appState.todayAttendance = presentCount;
+    document.getElementById('manual-present-count').textContent = presentCount;
+    document.getElementById('manual-absent-count').textContent = absentCount;
+    document.getElementById('live-checkin-count').textContent = presentCount;
+    document.getElementById('metric-today-attendance').textContent = presentCount;
+  }
+
+  function updateLiveFeed() {
+    const empty = document.getElementById('live-feed-empty');
+    const list = document.getElementById('live-feed-list');
+    const presents = appState.members.filter(m => m.present);
+
+    if (presents.length === 0) {
+      empty.classList.remove('hidden');
+      list.classList.add('hidden');
+      return;
+    }
+
+    empty.classList.add('hidden');
+    list.classList.remove('hidden');
+    list.innerHTML = '';
+
+    presents.forEach(p => {
+      const item = document.createElement('div');
+      item.className = "flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md";
+      item.innerHTML = `
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-title-md">check_circle</span>
+          <span class="font-semibold">${p.name}</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-on-surface-variant">Self-Check In</span>
+      `;
+      list.appendChild(item);
+    });
+  }
+
+  function updateMetricsUI() {
+    document.getElementById('metric-total-members').textContent = appState.totalMembers;
+    document.getElementById('metric-active-members').textContent = appState.activeMembers;
+    document.getElementById('metric-today-attendance').textContent = appState.todayAttendance;
+    document.getElementById('metric-total-sessions').textContent = appState.totalSessions;
+    document.getElementById('metric-pending-approvals').textContent = appState.pendingApprovals;
+    document.getElementById('metric-pending-suggestions').textContent = appState.pendingSuggestions;
+    
+    // Update filter badge counts
+    const filterAll = document.getElementById('filter-all');
+    if (filterAll) filterAll.textContent = `All (${appState.totalMembers})`;
+    const filterActive = document.getElementById('filter-active');
+    if (filterActive) filterActive.textContent = `Active (${appState.activeMembers})`;
+  }
+
+  function simulateScanToken() {
+    if (appState.members.length === 0) {
+      showToast('No registered members exist to simulate scan. Register a member first!', 'warning');
+      return;
+    }
+    const unrecorded = appState.members.find(m => !m.present);
+    if (!unrecorded) {
+      showToast('All registered members have already checked in!', 'done_all');
+      return;
+    }
+    unrecorded.present = true;
+    showToast(`QR Read Success: ${unrecorded.name} checked in!`, 'qr_code_scanner');
+    renderMembersTable();
+    updateLiveFeed();
+  }
+
+  function refreshQR() {
+    showToast('New dynamic session token generated and geo-synced.', 'autorenew');
+  }
+
+  function copyInviteLink() {
+    const copyText = "https://swasthyasangam.cit.ac.in/join?circle=GUBBI-YOGA";
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(copyText);
+    }
+    const btnText = document.getElementById('copy-btn-text');
+    btnText.textContent = "Link Copied!";
+    setTimeout(() => {
+      btnText.textContent = "Copy Self-Registration URL";
+    }, 2000);
+    showToast('Registration URL copied to clipboard!', 'content_copy');
+  }
+
+  function exportDataNotice(type) {
+    showToast(`Generating ${type} report for CIT Gubbi registers...`, 'download');
+  }
+
+  function filterMembers(type) {
+    showToast(`Filtered member directory view: ${type}`, 'filter_list');
+  }
+
+  function handleSessionChange(val) {
+    if (val !== 'none') {
+      showToast('Switched active session context.', 'check');
+    }
+  }
+
+  function showToast(msg, icon) {
+    const toast = document.getElementById('dashboard-toast');
+    const toastMsg = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+    
+    toastMsg.textContent = msg;
+    toastIcon.textContent = icon || 'check_circle';
+    
+    toast.classList.remove('translate-y-16', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    setTimeout(() => {
+      toast.classList.add('translate-y-16', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-md px-margin shadow-[0_-1px_6px_rgba(48,58,54,0.03)]"><div class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-2 flex-wrap"><span class="inline-flex items-center gap-1 font-semibold text-primary"><span class="material-symbols-outlined text-body-sm">diversity_3</span>Community / Societal Project</span><span class="opacity-40">|</span><span>College: <strong class="font-semibold text-on-surface">[CIT, Gubbi]</strong></span><span class="opacity-40">|</span><span>Developed by: <strong class="font-semibold text-on-surface">[Deep Thinkers]</strong></span></div><div class="flex items-center gap-space-sm text-on-surface-variant opacity-85"><span class="material-symbols-outlined text-body-sm">verified</span><span>v2.4 LTS • Self Help Group Digital Network</span></div></div></footer></div></body></html>

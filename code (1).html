@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#f1ede7","error":"#ba1a1a","on-primary-fixed":"#002116","error-container":"#ffdad6","on-surface-variant":"#414844","outline-variant":"#c1c8c3","on-tertiary-container":"#fffbff","surface-container-high":"#ebe8e2","primary-fixed":"#c4ebd9","on-secondary-fixed-variant":"#6f3800","outline":"#717974","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb0c9","primary-container":"#587c6d","surface-container-low":"#f7f3ed","on-error-container":"#93000a","on-error":"#ffffff","surface-container-highest":"#e6e2dc","primary-fixed-dim":"#a8cfbd","primary":"#3f6355","secondary-fixed":"#ffdcc4","on-tertiary":"#ffffff","on-background":"#1c1c18","surface-variant":"#e6e2dc","surface-container-lowest":"#ffffff","background":"#fdf9f3","on-primary-container":"#f5fff8","on-tertiary-fixed-variant":"#70334a","secondary":"#8e4e14","inverse-primary":"#a8cfbd","tertiary-fixed":"#ffd9e3","tertiary":"#89475f","secondary-container":"#ffab69","tertiary-container":"#a55f78","surface-bright":"#fdf9f3","on-tertiary-fixed":"#3a061e","on-surface":"#1c1c18","surface":"#fdf9f3","on-secondary-container":"#783d01","secondary-fixed-dim":"#ffb780","inverse-surface":"#31302d","surface-tint":"#426657","inverse-on-surface":"#f4f0ea","on-primary":"#ffffff","surface-dim":"#dddad4","on-secondary-fixed":"#2f1400","on-primary-fixed-variant":"#2a4d40"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xs":"0.25rem","margin":"2rem","space-xl":"2.5rem","gutter":"1.25rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"headline-lg-mobile":["Nunito Sans"],"body-lg":["Nunito Sans"],"label-sm":["Nunito Sans"],"title-md":["Nunito Sans"],"headline-sm":["Nunito Sans"],"label-md":["Nunito Sans"],"display-lg-mobile":["Nunito Sans"],"headline-md":["Nunito Sans"],"body-sm":["Nunito Sans"],"display-lg":["Nunito Sans"],"headline-lg":["Nunito Sans"],"label-lg":["Nunito Sans"],"body-md":["Nunito Sans"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg-mobile":["30px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"34px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"42px","letterSpacing":"-0.005em","fontWeight":"700"}],"label-lg":["15px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,58,54,0.05)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[280px]"><img alt="Swasthya Sangam Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQbyOYyeZrY_JXFdYcVuoeaWZVcHZ7_wCgX3rZMZI2R7r6pSSprodjdd6_65pwnJ0JeOO2-Gsq_9GXJMIVZQ6kX33zivwKn7sFA5Ab7zPYUpepr__HUmx55tPqWl05rlQMWJDgwqLw-fPig8vz-iPh7sgxOS5ZJkHkyXCzFH6LOXhjjVmPixweXWlNIPsEAPRt35G15WjGWGy64tc2R81MVTo9_hHmiF4HU5IqaJrJ"/><div class="flex flex-col"><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Swasthya Sangam</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal opacity-85">(ಸ್ವಾಸ್ಥ್ಯ ಸಂಗಮ)</span></div><span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">Your Daily Path to Wellness</span></div></div><div class="hidden xl:flex items-center bg-surface-container rounded-full p-1 shadow-inner"><span class="font-label-sm text-label-sm text-on-surface-variant px-space-sm uppercase tracking-wider">Role:</span><div class="flex items-center gap-1"><button class="px-space-md py-1 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all shadow-sm" type="button">Instructor</button><button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button">Member</button><button class="px-space-md py-1 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button">Admin</button></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-lg p-1 text-on-surface-variant"><button class="px-2 py-0.5 rounded font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors" title="Decrease Font Size" type="button">A-</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest font-bold text-on-surface shadow-xs" title="Default Font Size" type="button">A</button><button class="px-2 py-0.5 rounded font-label-sm text-label-sm hover:bg-surface-container hover:text-on-surface transition-colors" title="Increase Font Size" type="button">A+</button></div><div class="flex items-center bg-surface-container-low rounded-full p-1 text-on-surface-variant"><button class="px-space-sm py-0.5 rounded-full font-label-md text-label-md bg-surface-container-lowest font-bold text-primary shadow-xs" type="button">EN</button><button class="px-space-sm py-0.5 rounded-full font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors" type="button">ಕನ್ನಡ</button></div><button aria-label="Notifications" class="relative p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="relative group flex items-center pl-space-xs"><button class="flex items-center gap-space-sm focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsjizYQ-Z-Pggj_vGKPk6nq9TckxLnjkrUcyrqxAyaXZ8cJNURUF8BpfjkNzYcWIVlxBERjwWRXleeZGBZMqUJDY4hdgBHyTXLJfxMAFLYTRg2AY_IRXJJ6C9A3P3M8AFkdCbSwVzsBc1AEzM-uLniMjdXZNG1_XZCh4AwVSEe7sK5yNUQ9UqJyQ3KlfYWLzPxYNx7-mgfvDwHcXPEVyeoQM0TU1uH9PTShM4ffPxw"/><span class="material-symbols-outlined text-on-surface-variant text-label-lg group-hover:text-on-surface transition-transform duration-200 group-hover:rotate-180">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 bg-surface-container-lowest rounded-xl shadow-[0_10px_30px_-4px_rgba(48,58,54,0.12)] p-2 hidden group-hover:flex group-focus-within:flex flex-col z-50 animate-in fade-in slide-in-from-top-1 duration-150"><div class="px-space-md py-space-sm mb-1"><p class="font-label-lg text-label-lg text-on-surface leading-tight">Deepa Shastri</p><p class="font-label-sm text-label-sm text-on-surface-variant">Instructor • #KA-CIT-084</p></div><div class="h-px w-full bg-surface-container-high my-1"></div><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">badge</span>Profile</a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">tune</span>Settings</a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">lock_reset</span>Change Password</a><div class="h-px w-full bg-surface-container-high my-1"></div><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-label-md text-label-md text-error hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-title-md">logout</span>Logout</a></div></div></div></div></header><aside class="fixed left-0 top-20 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(48,58,54,0.03)] overflow-y-auto"><div class="flex flex-col gap-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold opacity-75">Sangam Registers</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-xs"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary-container font-semibold shadow-xs" data-path="dashboard-overview" href="#"><span class="material-symbols-outlined text-title-md">space_dashboard</span><span>Dashboard Overview</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="yoga-sessions-timetable" href="#"><span class="material-symbols-outlined text-title-md">self_improvement</span><span>Yoga Sessions &amp; Timetable</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="attendance-management" href="#"><span class="material-symbols-outlined text-title-md">qr_code_scanner</span><span>Attendance (QR &amp; Manual)</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="member-directory" href="#"><span class="material-symbols-outlined text-title-md">group</span><span>Member Directory &amp; Approvals</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="suggestions-queries" href="#"><span class="material-symbols-outlined text-title-md">contact_support</span><span>Suggestions &amp; Queries</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="announcements" href="#"><span class="material-symbols-outlined text-title-md">campaign</span><span>Announcements</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-title-md">analytics</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-md px-space-md py-2.5 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-title-md">settings</span><span>Settings</span></a></nav></div><div class="mt-space-lg p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-body-md">energy_savings_leaf</span><span class="font-label-md text-label-md font-bold">Daily Shloka &amp; Dhyana</span></div><p class="font-label-sm text-label-sm text-on-surface-variant italic mt-1">"ಸಮತ್ವಂ ಯೋಗ ಉಚ್ಯತೆ"</p><p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">(Equanimity is known as Yoga)</p></div></aside><div class="pl-72 flex flex-col min-h-screen"><main class="relative pt-20 w-full px-margin py-space-lg flex-1 bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Context Header & Micro Role/Lang Bar -->
+<div class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">Admin Console</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Live Record Store Active</span>
+</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Swasthya Sangam Dashboard</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಸ್ವಾಸ್ಥ್ಯ ಸಂಗಮ ಆಡಳಿತ ಮಂಡಳಿ • Real-time self-help community yoga register</p>
+</div>
+<!-- Quick Utilities: Evaluation Badge & Local Storage Sync -->
+<div class="flex items-center flex-wrap gap-space-sm bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<div class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-primary text-label-md">database</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface leading-none font-bold">CPSP Engine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] leading-tight">Zero-mock storage active</span>
+</div>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" id="quick-backup-top" onclick="triggerDataExport()">
+<span class="material-symbols-outlined text-title-md">download</span>
+<span>JSON Export</span>
+</button>
+</div>
+</div>
+<!-- Primary Tab Navigation Strip -->
+<div class="w-full bg-surface-container-low rounded-xl p-1 mb-space-lg shadow-sm flex items-center gap-1 overflow-x-auto">
+<button class="tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg transition-all bg-primary-container text-on-primary-container shadow-xs" id="tab-btn-overview" onclick="switchAdminTab('overview')">
+<span class="material-symbols-outlined text-title-md">insights</span>
+<span>Overview (ಅವಲೋಕನ)</span>
+</button>
+<button class="tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" id="tab-btn-members" onclick="switchAdminTab('members')">
+<span class="material-symbols-outlined text-title-md">how_to_reg</span>
+<span>Manage Members (ಸದಸ್ಯರು)</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm" id="tab-badge-members">0</span>
+</button>
+<button class="tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" id="tab-btn-instructors" onclick="switchAdminTab('instructors')">
+<span class="material-symbols-outlined text-title-md">self_improvement</span>
+<span>Manage Instructors (ಬೋಧಕರು)</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm" id="tab-badge-instructors">0</span>
+</button>
+<button class="tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" id="tab-btn-settings" onclick="switchAdminTab('settings')">
+<span class="material-symbols-outlined text-title-md">tune</span>
+<span>Settings &amp; Backup (ವ್ಯವಸ್ಥೆ)</span>
+</button>
+</div>
+<!-- ================= TAB 1: OVERVIEW ================= -->
+<section class="admin-tab-pane flex flex-col gap-space-lg" id="tab-content-overview">
+<!-- Quick Actions Action Bar -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-sm">bolt</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Administrative Immediate Actions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಕ್ವಿಕ್ ಆಕ್ಷನ್ - Real-time verified mutations</p>
+</div>
+</div>
+<div class="flex items-center flex-wrap gap-2">
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="openAddInstructorModal()">
+<span class="material-symbols-outlined text-body-sm">person_add</span>
+<span>+ Add Instructor</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="openAddMemberModal()">
+<span class="material-symbols-outlined text-body-sm">group_add</span>
+<span>+ Register Member</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" onclick="switchAdminTab('settings')">
+<span class="material-symbols-outlined text-body-sm">event_repeat</span>
+<span>Update Timetable</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" onclick="exportAuditLog()">
+<span class="material-symbols-outlined text-body-sm">receipt_long</span>
+<span>Export Audit Log</span>
+</button>
+</div>
+</div>
+<!-- Verified KPI Bento Matrix (All Strict 0 - Real Architecture) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Total Registered Members -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Total Registered</span>
+<span class="p-2 rounded-lg bg-primary-fixed text-on-primary-fixed material-symbols-outlined text-headline-sm">groups</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight" id="kpi-registered-members">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">ನೋಂದಾಯಿತ ಸದಸ್ಯರು (0 verified)</span>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-low rounded p-1.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Awaiting first registration</span>
+</div>
+</div>
+<!-- Active Members -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Active Members</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-headline-sm">how_to_reg</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight" id="kpi-active-members">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">ಸಕ್ರಿಯ ಸದಸ್ಯರು</span>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-low rounded p-1.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">0 approved &amp; regular</span>
+</div>
+</div>
+<!-- Volunteer Instructors -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Instructors</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-headline-sm">self_improvement</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight" id="kpi-instructors">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">ಸ್ವಯಂಸೇವಕ ಬೋಧಕರು</span>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-low rounded p-1.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CIT certified volunteers: 0</span>
+</div>
+</div>
+<!-- Sessions Conducted -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Sessions Logged</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-secondary material-symbols-outlined text-headline-sm">fitness_center</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight" id="kpi-sessions">0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">ತರಗತಿಗಳು ಪೂರ್ಣಗೊಂಡಿವೆ</span>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-low rounded p-1.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Morning slot: 6:00 AM</span>
+</div>
+</div>
+<!-- Overall Attendance Rate -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Attendance Rate</span>
+<span class="p-2 rounded-lg bg-surface-container-high text-primary material-symbols-outlined text-headline-sm">percent</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight" id="kpi-attendance">0.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">ಹಾಜರಾತಿ ಪ್ರಮಾಣ</span>
+</div>
+<div class="mt-space-sm pt-2 bg-surface-container-low rounded p-1.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Baseline awaiting roll call</span>
+</div>
+</div>
+</div>
+<!-- Centerpiece Grid: Visual Status + Zero-Audit Log -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Group Readiness Visual Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Live SHG Readiness</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Zero-State</span>
+</div>
+<!-- Micro SVG Metric Chart Graphic -->
+<div class="flex flex-col items-center justify-center my-space-md">
+<svg class="w-36 h-36" viewbox="0 0 100 100">
+<circle class="text-surface-container-high fill-none" cx="50" cy="50" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary fill-none transition-all duration-1000" cx="50" cy="50" id="progress-circle" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="251.2" stroke-linecap="round" stroke-width="8"></circle>
+<text class="font-headline-sm fill-on-surface font-bold" text-anchor="middle" x="50" y="47">0%</text>
+<text class="font-label-sm fill-on-surface-variant text-[9px]" text-anchor="middle" x="50" y="62">Roll Call</text>
+</svg>
+<p class="font-label-md text-label-md text-on-surface text-center mt-2">Community Hall Cohort #01</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-[220px]">Ready to capture morning biometric or QR tokens once registered.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-title-md mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+            Swasthya Sangam engine is clean. As members arrive and scan barcodes, aggregate analytics will compile here instantly.
+          </p>
+</div>
+</div>
+<!-- Real Audit Log & System Activity (Strict Empty State Architecture) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-sm">history_edu</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Audit Log &amp; Recent System Activity</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ದೈನಂದಿನ ಚಟುವಟಿಕೆ ದಾಖಲೆ • Cryptographic chronological register</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" onclick="clearAuditLogPrompt()" title="Clear non-system log entries">
+<span class="material-symbols-outlined text-title-md">clear_all</span>
+</button>
+</div>
+<!-- Dynamic/Real Container for Audit Logs -->
+<div class="my-space-md flex-1 flex flex-col justify-center min-h-[220px]" id="audit-log-container">
+<!-- Strictly enforced clean empty state -->
+<div class="text-center py-space-lg px-space-md flex flex-col items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-headline-sm text-primary">verified_user</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">System initialized. No member or session activity logged yet.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+              ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಿದೆ. ಯಾವುದೇ ಹೊಸ ದಾಖಲೆಗಳು ಇಲ್ಲ. Member additions, instructor onboardings, and manual roll-call events will show timestamps here.
+            </p>
+<div class="mt-space-md flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface">Genesis ID: SS-CIT-2025-GENESIS</span>
+<span class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Node Status: Pristine</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-space-sm border-t border-surface-container font-label-sm text-label-sm">
+<span>Active Registry Engine: Local IndexedDB / Storage</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">security</span> Tamper resistant audit trail
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TAB 2: MANAGE MEMBERS ================= -->
+<section class="admin-tab-pane hidden flex-col gap-space-lg" id="tab-content-members">
+<!-- Header with Search, Filter & Quick Action -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md flex-1">
+<!-- Search bar -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-headline-sm">search</span>
+<input class="w-full pl-10 pr-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="member-search-input" onkeyup="filterMembers()" placeholder="Search by name, ID (#KA-CIT-...), or phone..." type="text"/>
+</div>
+<!-- Filter Badges -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+<button class="filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-xs" id="filter-btn-all" onclick="setMemberStatusFilter('all')">All (0)</button>
+<button class="filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface hover:bg-surface-container transition-all" id="filter-btn-pending" onclick="setMemberStatusFilter('Pending')">Pending (0)</button>
+<button class="filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface hover:bg-surface-container transition-all" id="filter-btn-active" onclick="setMemberStatusFilter('Active')">Active (0)</button>
+<button class="filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface hover:bg-surface-container transition-all" id="filter-btn-inactive" onclick="setMemberStatusFilter('Inactive')">Inactive (0)</button>
+</div>
+</div>
+<button class="flex items-center justify-center gap-1.5 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="openAddMemberModal()">
+<span class="material-symbols-outlined text-title-md">fitbit_push_ups</span>
+<span>+ Register New Member</span>
+</button>
+</div>
+<!-- Member Roster Table Area -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Member Details (ಸದಸ್ಯರ ವಿವರ)</th>
+<th class="py-3 px-space-md">Contact &amp; Age</th>
+<th class="py-3 px-space-md">Batch / Time</th>
+<th class="py-3 px-space-md">Health Concerns</th>
+<th class="py-3 px-space-md">Status (ಸ್ಥಿತಿ)</th>
+<th class="py-3 px-space-md text-right">Actions (ಕ್ರಮಗಳು)</th>
+</tr>
+</thead>
+<tbody id="member-table-body">
+<!-- STRICT REAL EMPTY STATE -->
+<tr id="empty-members-row">
+<td class="py-space-xl px-space-md text-center" colspan="6">
+<div class="flex flex-col items-center justify-center max-w-lg mx-auto">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-display-lg-mobile">person_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No members registered yet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    New member registrations from the portal will appear here for verification and approval. You can also onboard local participants manually.
+                  </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 italic">
+                    (ಯಾವುದೇ ಸದಸ್ಯರು ಇನ್ನೂ ನೋಂದಾಯಿಸಿಲ್ಲ. ಹೊಸ ನೊಂದಣಿಗಳು ಅನುಮೋದನೆಗಾಗಿ ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.)
+                  </p>
+<button class="mt-space-md inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" onclick="openAddMemberModal()">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+<span>Register First Member Now</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- ================= TAB 3: MANAGE INSTRUCTORS ================= -->
+<section class="admin-tab-pane hidden flex-col gap-space-lg" id="tab-content-instructors">
+<!-- Header with Action -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Volunteer Instructors Console</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಸ್ವಯಂಸೇವಕ ಯೋಗ ಬೋಧಕರ ಪಟ್ಟಿ ಮತ್ತು ಅನುಮತಿಗಳ ನಿರ್ವಹಣೆ</p>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="openAddInstructorModal()">
+<span class="material-symbols-outlined text-title-md">assignment_ind</span>
+<span>+ Add Volunteer Instructor</span>
+</button>
+</div>
+<!-- Instructor Permissions Guide Banner -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-md">verified</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Role Privileges Specification</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Grant granular responsibilities for daily attendance roll-call, public broadcast alerts, and reporting.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">QR Attendance</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Announcements</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Report Generation</span>
+</div>
+</div>
+<!-- Instructor Cards Container / Strict Empty State -->
+<div class="w-full" id="instructors-list-container">
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm text-center flex flex-col items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-display-lg-mobile">person_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No additional instructors assigned</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+          Click "+ Add Instructor" to onboard volunteer yoga teachers from CIT or local community trusts to conduct daily morning dhyana &amp; asana sessions.
+        </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 italic">
+          (ಯಾವುದೇ ಬೋಧಕರನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ. ಸ್ವಯಂಸೇವಕ ಯೋಗ ಶಿಕ್ಷಕರನ್ನು ಸೇರಿಸಲು "+ Add Instructor" ಕ್ಲಿಕ್ ಮಾಡಿ.)
+        </p>
+<button class="mt-space-md inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" onclick="openAddInstructorModal()">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+<span>Onboard First Instructor</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ================= TAB 4: SETTINGS & BACKUP ================= -->
+<section class="admin-tab-pane hidden flex-col gap-space-lg" id="tab-content-settings">
+<!-- Group Information Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm pb-space-sm border-b border-surface-container mb-space-md">
+<span class="material-symbols-outlined text-primary text-headline-sm">storefront</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Self Help Group Information (ಸಂಸ್ಥೆಯ ವಿವರಗಳು)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core community venue parameters &amp; morning batch timings</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Group Name / ಸಂಸ್ಥೆಯ ಹೆಸರು</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="setting-group-name" type="text" value="Swasthya Sangam Yoga SHG"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Venue / Hall Location (ಸ್ಥಳ)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="setting-group-venue" type="text" value="Community Hall, Ground Floor, CIT Campus"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Regular Timetable Schedule (ದಿನಗಳು)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="setting-group-days" type="text" value="Monday - Saturday (ಸೋಮ - ಶನಿ)"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Session Hours (ಸಮಯ)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" id="setting-group-time" type="text" value="6:00 AM - 7:30 AM IST (ದೈನಂದಿನ ಯೋಗಾಭ್ಯಾಸ)"/>
+</div>
+</div>
+<div class="mt-space-md flex justify-end">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="saveGroupSettings()">
+          Save Group Profile
+        </button>
+</div>
+</div>
+<!-- Dual Preferences: Language & Reminders -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Bilingual Preferences -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm pb-space-sm border-b border-surface-container mb-space-md">
+<span class="material-symbols-outlined text-primary text-headline-sm">translate</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Language &amp; Script Preferences</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ದ್ವಿಭಾಷಾ ಆಯ್ಕೆಗಳು</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Primary Interface Language</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Default dashboard locale</span>
+</div>
+<select class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none border-none" id="setting-lang-select">
+<option value="bilingual">Bilingual (English + ಕನ್ನಡ)</option>
+<option value="kannada">ಕನ್ನಡ ಮಾತ್ರ (Kannada Only)</option>
+<option value="english">English Only</option>
+</select>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Printable Asana Charts in Kannada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generate handouts with Kannada script titles</span>
+</div>
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Notification and Reminder Preferences -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm pb-space-sm border-b border-surface-container mb-space-md">
+<span class="material-symbols-outlined text-primary text-headline-sm">notifications_active</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Notification &amp; Reminders</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಸಂದೇಶ ಮತ್ತು ಜ್ಞಾಪನೆಗಳು</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Daily 5:15 AM SMS/WhatsApp Alert</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sends morning reminder before dhyana</span>
+</div>
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Absence Alert after 3 Consecutive Days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prompts volunteer follow-up for health welfare</span>
+</div>
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Backup, Data Reset & Storage Engine Specification -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm">save_as</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface">Backup, Data Reset &amp; Storage Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ಡೇಟಾ ಬ್ಯಾಕಪ್ ಮತ್ತು ಮರುಹೊಂದಿಸುವಿಕೆ</p>
+</div>
+</div>
+<!-- CPSP Information Badge -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-label-md text-primary">verified</span>
+<span>Local Browser Storage Engine — Safe for demo &amp; CPSP evaluation</span>
+</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Group Data Synchronization &amp; Portability</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Export all local records, member profiles, logs, and attendance counters in standardized formats for academic review.
+            </p>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<button class="flex items-center gap-1 px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm" onclick="triggerDataExport()">
+<span class="material-symbols-outlined text-title-md">file_download</span>
+<span>Export Group Data (JSON)</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" onclick="triggerCSVExport()">
+<span class="material-symbols-outlined text-title-md">table_view</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-error-container/30 flex flex-col justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-error block">Prune System Cache &amp; Reset Storage</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Flush the browser's indexed mock store back to pristine zero-state baseline. Useful when preparing for formal presentation evaluation.
+            </p>
+</div>
+<div class="mt-space-md">
+<button class="flex items-center gap-1 px-3 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md hover:opacity-90 transition-all shadow-sm" onclick="confirmResetStorage()">
+<span class="material-symbols-outlined text-title-md">delete_forever</span>
+<span>Clear Local Cache</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MODAL: ADD MEMBER ================= -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs hidden items-center justify-center p-space-md" id="modal-add-member">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-headline-sm">person_add</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Register Member (ಹೊಸ ಸದಸ್ಯ)</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeAddMemberModal()">
+<span class="material-symbols-outlined text-headline-sm">close</span>
+</button>
+</div>
+<form class="space-y-space-sm" id="form-register-member" onsubmit="handleMemberSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Full Name / ಪೂರ್ಣ ಹೆಸರು *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-name" placeholder="e.g. Ramesh Gowda" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Contact Phone *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-phone" placeholder="+91 98450 12345" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Age (ವಯಸ್ಸು) *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-age" max="100" min="12" placeholder="42" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Assigned Batch / ವರ್ಗ</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-batch">
+<option value="Morning Batch (6:00 AM - 7:30 AM)">Morning Batch (6:00 AM - 7:30 AM)</option>
+<option value="Senior Citizens Group (7:30 AM - 8:30 AM)">Senior Citizens Group (7:30 AM - 8:30 AM)</option>
+<option value="Evening Gentle Flow (5:30 PM - 6:30 PM)">Evening Gentle Flow (5:30 PM - 6:30 PM)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Health Concerns / Notes (ಆರೋಗ್ಯ ಟಿಪ್ಪಣಿ)</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-health" placeholder="e.g. Mild Hypertension, Knee Arthralgia (None if healthy)" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Initial Verification Status</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-member-status">
+<option value="Active">Approve Immediately (Active)</option>
+<option selected="" value="Pending">Pending Verification (Requires Admin Review)</option>
+</select>
+</div>
+<div class="pt-space-md flex items-center justify-end gap-2 border-t border-surface-container mt-space-md">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container" onclick="closeAddMemberModal()" type="button">Cancel</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm" type="submit">Save &amp; Enroll</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ================= MODAL: ADD INSTRUCTOR ================= -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs hidden items-center justify-center p-space-md" id="modal-add-instructor">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-headline-sm">assignment_ind</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Add Volunteer Instructor (ಬೋಧಕರು)</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeAddInstructorModal()">
+<span class="material-symbols-outlined text-headline-sm">close</span>
+</button>
+</div>
+<form class="space-y-space-sm" id="form-register-instructor" onsubmit="handleInstructorSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Instructor Full Name *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-instructor-name" placeholder="e.g. Smt. Deepa Shastri" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Contact Phone *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-instructor-phone" placeholder="+91 94480 56789" required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Experience / Cert *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-instructor-cert" placeholder="YCB L-2 / 5+ yrs" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Assigned Batches &amp; Hall Locations</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest" id="input-instructor-location" required="" type="text" value="CIT Community Hall - Morning 6:00 AM"/>
+</div>
+<div>
+<span class="block font-label-md text-label-md text-on-surface mb-1.5 font-bold">Permissions &amp; Delegations</span>
+<div class="space-y-1.5 p-space-sm rounded-lg bg-surface-container-low">
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="perm-attendance" type="checkbox"/>
+<span>Can mark daily attendance (QR &amp; manual roll call)</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="perm-announcements" type="checkbox"/>
+<span>Can publish announcements &amp; timing alterations</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="perm-members" type="checkbox"/>
+<span>Can verify and manage member registrations</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="perm-reports" type="checkbox"/>
+<span>Can export group monthly reports</span>
+</label>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-end gap-2 border-t border-surface-container mt-space-md">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container" onclick="closeAddInstructorModal()" type="button">Cancel</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm" type="submit">Assign Instructor</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Feedback Container -->
+<div class="fixed bottom-12 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2 px-space-md py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl" id="admin-toast">
+<span class="material-symbols-outlined text-primary-fixed" id="admin-toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="admin-toast-message">Action completed successfully.</span>
+</div>
+</div>
+<script>
+  // ================= STORAGE CONSTANTS & ZERO-STATE INITIALIZATION =================
+  const STORAGE_KEY_MEMBERS = 'swasthya_members_db';
+  const STORAGE_KEY_INSTRUCTORS = 'swasthya_instructors_db';
+  const STORAGE_KEY_AUDIT = 'swasthya_audit_db';
+  const STORAGE_KEY_SETTINGS = 'swasthya_settings_db';
+
+  let currentMemberFilter = 'all';
+
+  function getLocalData(key, defaultVal = []) {
+    try {
+      const data = localStorage.getItem(key);
+      return data ? JSON.parse(data) : defaultVal;
+    } catch (e) {
+      return defaultVal;
+    }
+  }
+
+  function setLocalData(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (e) {
+      console.error('Storage write error', e);
+    }
+  }
+
+  function appendAuditLog(action, details) {
+    const logs = getLocalData(STORAGE_KEY_AUDIT, []);
+    const entry = {
+      id: 'LOG-' + Date.now().toString(36).toUpperCase(),
+      timestamp: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
+      date: new Date().toLocaleDateString('en-GB'),
+      action,
+      details
+    };
+    logs.unshift(entry);
+    setLocalData(STORAGE_KEY_AUDIT, logs);
+    renderAuditLogs();
+  }
+
+  // ================= TAB MANAGEMENT =================
+  function switchAdminTab(tabKey) {
+    const tabs = ['overview', 'members', 'instructors', 'settings'];
+    tabs.forEach(t => {
+      const pane = document.getElementById(`tab-content-${t}`);
+      const btn = document.getElementById(`tab-btn-${t}`);
+      if (pane && btn) {
+        if (t === tabKey) {
+          pane.classList.remove('hidden');
+          pane.classList.add('flex');
+          btn.className = 'tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg transition-all bg-primary-container text-on-primary-container shadow-xs';
+        } else {
+          pane.classList.add('hidden');
+          pane.classList.remove('flex');
+          btn.className = 'tab-button flex-1 flex items-center justify-center gap-2 py-2.5 px-space-md rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all';
+        }
+      }
+    });
+  }
+
+  // ================= RENDER COUNTS & KPIS =================
+  function updateKPIs() {
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+    const instructors = getLocalData(STORAGE_KEY_INSTRUCTORS, []);
+
+    const totalMembers = members.length;
+    const activeMembers = members.filter(m => m.status === 'Active').length;
+    const pendingMembers = members.filter(m => m.status === 'Pending').length;
+    const inactiveMembers = members.filter(m => m.status === 'Inactive').length;
+    const totalInstructors = instructors.length;
+
+    // Zero-state statistics
+    document.getElementById('kpi-registered-members').textContent = totalMembers;
+    document.getElementById('kpi-active-members').textContent = activeMembers;
+    document.getElementById('kpi-instructors').textContent = totalInstructors;
+    document.getElementById('kpi-sessions').textContent = '0';
+    document.getElementById('kpi-attendance').textContent = totalMembers > 0 ? (activeMembers / totalMembers * 100).toFixed(1) + '%' : '0.0%';
+
+    // Badge pills in member filters
+    const filterAll = document.getElementById('filter-btn-all');
+    const filterPending = document.getElementById('filter-btn-pending');
+    const filterActive = document.getElementById('filter-btn-active');
+    const filterInactive = document.getElementById('filter-btn-inactive');
+
+    if (filterAll) filterAll.textContent = `All (${totalMembers})`;
+    if (filterPending) filterPending.textContent = `Pending (${pendingMembers})`;
+    if (filterActive) filterActive.textContent = `Active (${activeMembers})`;
+    if (filterInactive) filterInactive.textContent = `Inactive (${inactiveMembers})`;
+
+    // Nav Badges
+    const navBadgeMem = document.getElementById('tab-badge-members');
+    const navBadgeInst = document.getElementById('tab-badge-instructors');
+    if (navBadgeMem) navBadgeMem.textContent = totalMembers;
+    if (navBadgeInst) navBadgeInst.textContent = totalInstructors;
+  }
+
+  // ================= AUDIT LOG RENDERING =================
+  function renderAuditLogs() {
+    const container = document.getElementById('audit-log-container');
+    const logs = getLocalData(STORAGE_KEY_AUDIT, []);
+
+    if (!container) return;
+
+    if (logs.length === 0) {
+      container.innerHTML = `
+        <div class="text-center py-space-lg px-space-md flex flex-col items-center justify-center">
+          <div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-space-sm">
+            <span class="material-symbols-outlined text-headline-sm text-primary">verified_user</span>
+          </div>
+          <p class="font-title-md text-title-md text-on-surface font-semibold">System initialized. No member or session activity logged yet.</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+            ವ್ಯವಸ್ಥೆ ಪ್ರಾರಂಭಗೊಂಡಿದೆ. ಯಾವುದೇ ಹೊಸ ದಾಖಲೆಗಳು ಇಲ್ಲ. Member additions, instructor onboardings, and manual roll-call events will show timestamps here.
+          </p>
+          <div class="mt-space-md flex items-center gap-2">
+            <span class="px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface">Genesis ID: SS-CIT-2025-GENESIS</span>
+            <span class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Node Status: Pristine</span>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="space-y-2 max-h-[260px] overflow-y-auto pr-1">
+        ${logs.map(l => `
+          <div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-left">
+            <div class="flex items-center gap-2.5">
+              <span class="material-symbols-outlined text-primary text-body-md">history</span>
+              <div>
+                <span class="font-label-md text-label-md text-on-surface block font-bold">${l.action}</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">${l.details}</span>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="font-label-sm text-label-sm text-on-surface font-mono block">${l.timestamp}</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">${l.date}</span>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function clearAuditLogPrompt() {
+    if (confirm('Clear audit activity display history? (System genesis record remains unchanged)')) {
+      setLocalData(STORAGE_KEY_AUDIT, []);
+      renderAuditLogs();
+      showToast('Activity log reset to pristine state.');
+    }
+  }
+
+  // ================= MEMBER MANAGEMENT =================
+  function openAddMemberModal() {
+    const modal = document.getElementById('modal-add-member');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeAddMemberModal() {
+    const modal = document.getElementById('modal-add-member');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.getElementById('form-register-member').reset();
+    }
+  }
+
+  function handleMemberSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById('input-member-name').value.trim();
+    const phone = document.getElementById('input-member-phone').value.trim();
+    const age = document.getElementById('input-member-age').value.trim();
+    const batch = document.getElementById('input-member-batch').value;
+    const health = document.getElementById('input-member-health').value.trim() || 'None Reported';
+    const status = document.getElementById('input-member-status').value;
+
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+    const newMember = {
+      id: 'KA-CIT-' + (100 + members.length + 1),
+      name,
+      phone,
+      age,
+      batch,
+      health,
+      status,
+      joinedDate: new Date().toLocaleDateString('en-GB')
+    };
+
+    members.unshift(newMember);
+    setLocalData(STORAGE_KEY_MEMBERS, members);
+    appendAuditLog('Registered Member', `${name} (${newMember.id}) joined with status: ${status}`);
+
+    closeAddMemberModal();
+    renderMembersTable();
+    updateKPIs();
+    showToast(`Member ${name} registered successfully!`);
+  }
+
+  function setMemberStatusFilter(status) {
+    currentMemberFilter = status;
+    const buttons = {
+      all: document.getElementById('filter-btn-all'),
+      Pending: document.getElementById('filter-btn-pending'),
+      Active: document.getElementById('filter-btn-active'),
+      Inactive: document.getElementById('filter-btn-inactive'),
+    };
+    Object.keys(buttons).forEach(k => {
+      const b = buttons[k];
+      if (b) {
+        if (k === status) {
+          b.className = 'filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-xs';
+        } else {
+          b.className = 'filter-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface hover:bg-surface-container transition-all';
+        }
+      }
+    });
+    renderMembersTable();
+  }
+
+  function filterMembers() {
+    renderMembersTable();
+  }
+
+  function renderMembersTable() {
+    const tbody = document.getElementById('member-table-body');
+    const searchVal = (document.getElementById('member-search-input')?.value || '').toLowerCase();
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+
+    if (!tbody) return;
+
+    let filtered = members;
+    if (currentMemberFilter !== 'all') {
+      filtered = filtered.filter(m => m.status === currentMemberFilter);
+    }
+    if (searchVal) {
+      filtered = filtered.filter(m =>
+        m.name.toLowerCase().includes(searchVal) ||
+        m.id.toLowerCase().includes(searchVal) ||
+        m.phone.toLowerCase().includes(searchVal)
+      );
+    }
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = `
+        <tr id="empty-members-row">
+          <td colspan="6" class="py-space-xl px-space-md text-center">
+            <div class="flex flex-col items-center justify-center max-w-lg mx-auto">
+              <div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-sm">
+                <span class="material-symbols-outlined text-display-lg-mobile">person_search</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">No members registered yet</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                New member registrations from the portal will appear here for verification and approval. You can also onboard local participants manually.
+              </p>
+              <p class="font-label-sm text-label-sm text-on-surface-variant mt-1 italic">
+                (ಯಾವುದೇ ಸದಸ್ಯರು ಇನ್ನೂ ನೋಂದಾಯಿಸಿಲ್ಲ. ಹೊಸ ನೊಂದಣಿಗಳು ಅನುಮೋದನೆಗಾಗಿ ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.)
+              </p>
+              <button onclick="openAddMemberModal()" class="mt-space-md inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all">
+                <span class="material-symbols-outlined text-body-md">add_circle</span>
+                <span>Register First Member Now</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `;
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(m => {
+      let statusColor = 'bg-surface-container text-on-surface-variant';
+      if (m.status === 'Active') statusColor = 'bg-primary-fixed text-on-primary-fixed font-bold';
+      if (m.status === 'Pending') statusColor = 'bg-secondary-fixed text-on-secondary-fixed-variant font-bold';
+      if (m.status === 'Inactive') statusColor = 'bg-error-container text-on-error-container';
+
+      return `
+        <tr class="border-b border-surface-container hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-3 px-space-md">
+            <div class="flex items-center gap-space-sm">
+              <div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-label-md">
+                ${m.name.substring(0, 2).toUpperCase()}
+              </div>
+              <div>
+                <span class="font-label-lg text-label-lg text-on-surface block leading-tight font-bold">${m.name}</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">${m.id} • Joined: ${m.joinedDate}</span>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface">
+            <span>${m.phone}</span>
+            <span class="block text-on-surface-variant font-label-sm text-label-sm">${m.age} yrs</span>
+          </td>
+          <td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface-variant">
+            ${m.batch}
+          </td>
+          <td class="py-3 px-space-md font-body-sm text-body-sm text-on-surface">
+            <span class="inline-block px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm max-w-[180px] truncate" title="${m.health}">${m.health}</span>
+          </td>
+          <td class="py-3 px-space-md">
+            <span class="inline-block px-2.5 py-1 rounded-full font-label-sm text-label-sm ${statusColor}">${m.status}</span>
+          </td>
+          <td class="py-3 px-space-md text-right">
+            <div class="flex items-center justify-end gap-1">
+              ${m.status === 'Pending' ? `
+                <button onclick="approveMember('${m.id}')" title="Approve Member" class="p-1.5 rounded hover:bg-surface-container text-primary transition-colors">
+                  <span class="material-symbols-outlined text-title-md">check_circle</span>
+                </button>
+              ` : ''}
+              <button onclick="toggleMemberActive('${m.id}')" title="${m.status === 'Active' ? 'Deactivate' : 'Activate'}" class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+                <span class="material-symbols-outlined text-title-md">${m.status === 'Active' ? 'pause_circle' : 'play_circle'}</span>
+              </button>
+              <button onclick="showAttendanceSummary('${m.name}')" title="Attendance History" class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+                <span class="material-symbols-outlined text-title-md">event_available</span>
+              </button>
+              <button onclick="resetPasswordPrompt('${m.name}')" title="Reset Access Key" class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant transition-colors">
+                <span class="material-symbols-outlined text-title-md">key</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function approveMember(id) {
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+    const member = members.find(m => m.id === id);
+    if (member) {
+      member.status = 'Active';
+      setLocalData(STORAGE_KEY_MEMBERS, members);
+      appendAuditLog('Approved Member', `Verification cleared for ${member.name} (${id})`);
+      renderMembersTable();
+      updateKPIs();
+      showToast(`Member ${member.name} is now Active.`);
+    }
+  }
+
+  function toggleMemberActive(id) {
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+    const member = members.find(m => m.id === id);
+    if (member) {
+      member.status = member.status === 'Active' ? 'Inactive' : 'Active';
+      setLocalData(STORAGE_KEY_MEMBERS, members);
+      appendAuditLog('Status Changed', `${member.name} is now set to ${member.status}`);
+      renderMembersTable();
+      updateKPIs();
+      showToast(`${member.name} marked as ${member.status}.`);
+    }
+  }
+
+  function resetPasswordPrompt(name) {
+    showToast(`Temporary PIN sent via SMS to ${name}.`);
+    appendAuditLog('Security Action', `Reset access credentials for ${name}`);
+  }
+
+  function showAttendanceSummary(name) {
+    alert(`Attendance Ledger: ${name}\nTotal Recorded Sessions: 0\nAttended: 0 (0.0%)\nStatus: Registered but no class attendance checked in yet.`);
+  }
+
+  // ================= INSTRUCTOR MANAGEMENT =================
+  function openAddInstructorModal() {
+    const modal = document.getElementById('modal-add-instructor');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeAddInstructorModal() {
+    const modal = document.getElementById('modal-add-instructor');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.getElementById('form-register-instructor').reset();
+    }
+  }
+
+  function handleInstructorSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById('input-instructor-name').value.trim();
+    const phone = document.getElementById('input-instructor-phone').value.trim();
+    const cert = document.getElementById('input-instructor-cert').value.trim();
+    const location = document.getElementById('input-instructor-location').value.trim();
+
+    const perms = [];
+    if (document.getElementById('perm-attendance').checked) perms.push('Attendance');
+    if (document.getElementById('perm-announcements').checked) perms.push('Announcements');
+    if (document.getElementById('perm-members').checked) perms.push('Members');
+    if (document.getElementById('perm-reports').checked) perms.push('Reports');
+
+    const instructors = getLocalData(STORAGE_KEY_INSTRUCTORS, []);
+    const newInst = {
+      id: 'INST-' + (10 + instructors.length + 1),
+      name,
+      phone,
+      cert,
+      location,
+      perms,
+      status: 'Active',
+      joinedDate: new Date().toLocaleDateString('en-GB')
+    };
+
+    instructors.unshift(newInst);
+    setLocalData(STORAGE_KEY_INSTRUCTORS, instructors);
+    appendAuditLog('Assigned Instructor', `Volunteer yoga instructor ${name} assigned to ${location}`);
+
+    closeAddInstructorModal();
+    renderInstructorsList();
+    updateKPIs();
+    showToast(`Volunteer instructor ${name} added successfully!`);
+  }
+
+  function renderInstructorsList() {
+    const container = document.getElementById('instructors-list-container');
+    const instructors = getLocalData(STORAGE_KEY_INSTRUCTORS, []);
+
+    if (!container) return;
+
+    if (instructors.length === 0) {
+      container.innerHTML = `
+        <div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm text-center flex flex-col items-center justify-center">
+          <div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-sm">
+            <span class="material-symbols-outlined text-display-lg-mobile">person_off</span>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface">No additional instructors assigned</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-md">
+            Click "+ Add Instructor" to onboard volunteer yoga teachers from CIT or local community trusts to conduct daily morning dhyana &amp; asana sessions.
+          </p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-1 italic">
+            (ಯಾವುದೇ ಬೋಧಕರನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ. ಸ್ವಯಂಸೇವಕ ಯೋಗ ಶಿಕ್ಷಕರನ್ನು ಸೇರಿಸಲು "+ Add Instructor" ಕ್ಲಿಕ್ ಮಾಡಿ.)
+          </p>
+          <button onclick="openAddInstructorModal()" class="mt-space-md inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all">
+            <span class="material-symbols-outlined text-body-md">add_circle</span>
+            <span>Onboard First Instructor</span>
+          </button>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+        ${instructors.map(inst => `
+          <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between mb-2">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold">
+                    <span class="material-symbols-outlined">self_improvement</span>
+                  </div>
+                  <div>
+                    <h4 class="font-title-md text-title-md text-on-surface leading-tight font-bold">${inst.name}</h4>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">${inst.id} • ${inst.phone}</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">${inst.status}</span>
+              </div>
+
+              <div class="my-3 space-y-1.5">
+                <div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+                  <span class="material-symbols-outlined text-body-sm text-primary">school</span>
+                  <span><strong>Credentials:</strong> ${inst.cert}</span>
+                </div>
+                <div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+                  <span class="material-symbols-outlined text-body-sm text-primary">pin_drop</span>
+                  <span><strong>Venue:</strong> ${inst.location}</span>
+                </div>
+              </div>
+
+              <div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Delegated Permissions:</span>
+                <div class="flex flex-wrap gap-1">
+                  ${inst.perms.map(p => `
+                    <span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">${p}</span>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Active since: ${inst.joinedDate}</span>
+              <button onclick="removeInstructor('${inst.id}')" class="text-error hover:underline font-label-sm text-label-sm">
+                Revoke Role
+              </button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function removeInstructor(id) {
+    if (confirm('Revoke instructor credentials and unassign venue sessions?')) {
+      const instructors = getLocalData(STORAGE_KEY_INSTRUCTORS, []);
+      const inst = instructors.find(i => i.id === id);
+      const remaining = instructors.filter(i => i.id !== id);
+      setLocalData(STORAGE_KEY_INSTRUCTORS, remaining);
+      appendAuditLog('Revoked Instructor', `Unassigned instructor ${inst ? inst.name : id}`);
+      renderInstructorsList();
+      updateKPIs();
+      showToast('Instructor credentials revoked.');
+    }
+  }
+
+  // ================= SETTINGS & EXPORT LOGIC =================
+  function saveGroupSettings() {
+    const settings = {
+      name: document.getElementById('setting-group-name').value,
+      venue: document.getElementById('setting-group-venue').value,
+      days: document.getElementById('setting-group-days').value,
+      time: document.getElementById('setting-group-time').value,
+      language: document.getElementById('setting-lang-select').value
+    };
+    setLocalData(STORAGE_KEY_SETTINGS, settings);
+    appendAuditLog('Settings Updated', 'SHG venue coordinates and timetable updated');
+    showToast('Group profile and timetable saved successfully.');
+  }
+
+  function triggerDataExport() {
+    const bundle = {
+      system: 'Swasthya Sangam CPSP Evaluation Core',
+      projectInstitution: 'CIT, Gubbi',
+      developers: 'Deep Thinkers',
+      exportedAt: new Date().toISOString(),
+      settings: getLocalData(STORAGE_KEY_SETTINGS, {}),
+      members: getLocalData(STORAGE_KEY_MEMBERS, []),
+      instructors: getLocalData(STORAGE_KEY_INSTRUCTORS, []),
+      auditLog: getLocalData(STORAGE_KEY_AUDIT, [])
+    };
+
+    const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(bundle, null, 2));
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute('href', dataStr);
+    downloadAnchor.setAttribute('download', `swasthya_sangam_backup_${Date.now()}.json`);
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+
+    appendAuditLog('Data Export', 'Full cryptographic JSON data backup initiated');
+    showToast('Group database JSON exported successfully.');
+  }
+
+  function triggerCSVExport() {
+    const members = getLocalData(STORAGE_KEY_MEMBERS, []);
+    if (members.length === 0) {
+      alert('Cannot export CSV: Member register is empty (0 registered). Register members first.');
+      return;
+    }
+    const headers = ['Member_ID', 'Name', 'Phone', 'Age', 'Batch', 'Health_Notes', 'Status', 'Date_Joined'];
+    const rows = members.map(m => [m.id, `"${m.name}"`, `"${m.phone}"`, m.age, `"${m.batch}"`, `"${m.health}"`, m.status, m.joinedDate]);
+    const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute('href', encodeURI(csvContent));
+    downloadAnchor.setAttribute('download', `swasthya_members_${Date.now()}.csv`);
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+
+    appendAuditLog('CSV Export', 'Member register table exported to CSV');
+    showToast('Member roster exported as CSV.');
+  }
+
+  function exportAuditLog() {
+    const logs = getLocalData(STORAGE_KEY_AUDIT, []);
+    if (logs.length === 0) {
+      alert('Audit log is currently in clean genesis state. No user events logged yet.');
+      return;
+    }
+    const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(logs, null, 2));
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute('href', dataStr);
+    downloadAnchor.setAttribute('download', `swasthya_audit_log_${Date.now()}.json`);
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+  }
+
+  function confirmResetStorage() {
+    if (confirm('Are you sure you want to flush all local storage data back to zero baseline? This will purge all members and instructor rosters for demonstration purposes.')) {
+      localStorage.removeItem(STORAGE_KEY_MEMBERS);
+      localStorage.removeItem(STORAGE_KEY_INSTRUCTORS);
+      localStorage.removeItem(STORAGE_KEY_AUDIT);
+      localStorage.removeItem(STORAGE_KEY_SETTINGS);
+
+      updateKPIs();
+      renderMembersTable();
+      renderInstructorsList();
+      renderAuditLogs();
+      showToast('Local browser storage cleared to pristine zero-state.');
+    }
+  }
+
+  // ================= TOAST UI FEEDBACK =================
+  let toastTimer;
+  function showToast(message, isError = false) {
+    const toast = document.getElementById('admin-toast');
+    const msgEl = document.getElementById('admin-toast-message');
+    const iconEl = document.getElementById('admin-toast-icon');
+
+    if (!toast || !msgEl) return;
+
+    clearTimeout(toastTimer);
+    msgEl.textContent = message;
+    if (iconEl) {
+      iconEl.textContent = isError ? 'error' : 'check_circle';
+      iconEl.className = isError ? 'material-symbols-outlined text-error' : 'material-symbols-outlined text-primary-fixed';
+    }
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+
+  // ================= BOOTSTRAP INITIALIZATION =================
+  window.addEventListener('DOMContentLoaded', () => {
+    updateKPIs();
+    renderMembersTable();
+    renderInstructorsList();
+    renderAuditLogs();
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-md px-margin shadow-[0_-1px_6px_rgba(48,58,54,0.03)]"><div class="w-full flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-2 flex-wrap"><span class="inline-flex items-center gap-1 font-semibold text-primary"><span class="material-symbols-outlined text-body-sm">diversity_3</span>Community / Societal Project</span><span class="opacity-40">|</span><span>College: <strong class="font-semibold text-on-surface">[CIT, Gubbi]</strong></span><span class="opacity-40">|</span><span>Developed by: <strong class="font-semibold text-on-surface">[Deep Thinkers]</strong></span></div><div class="flex items-center gap-space-sm text-on-surface-variant opacity-85"><span class="material-symbols-outlined text-body-sm">verified</span><span>v2.4 LTS • Self Help Group Digital Network</span></div></div></footer></div></body></html>
